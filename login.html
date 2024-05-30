@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Houses | Log In</title>
+    
+    <!-- LInk To CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="index.html" class="logo"><img src='img/logo.jpg' width="150" height="85"></img>Fast Rent</a>
+           
+            <!-- Log In Button -->
+            <a href="sign-up.html" class="btn">Sign Up</a>
+        </div>
+
+    </header>
+    <!-- Log In -->
+    <div class="login container">
+        <div class="login-container">
+            <h2>Login To Continue</h2>
+            <p>Log in with your data that you entered <br>during your registration</p>
+            <!-- Login Form -->
+            <form name="myform" method="post" action="upload.html" onsubmit="return validateform()">
+                <span>Enter your username</span>
+                <input type="text" name="username" id="username" placeholder="username" required>
+                <span>Enter your password</span>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+
+                <div class="check">
+                    
+                        <input type="checkbox" onclick="myFunction()"><label for="show"> Show Password</label>
+
+                </div>
+                 
+                <a href="#">Forget Password?</a>
+
+                <a href="upload.html"><input type="submit" name="login" value="Login"></a>
+                            
+            </form>
+            <a href="sign-up.html" class="btn">Sign up </a>
+            
+        </div>
+        
+    </div>
+    
+  <!-- Footer -->
+    <section class="footer">
+        <div class="footer-container container">
+            <h2> <img src="img/logo.jpg" style="height: 90px; width: 85px;">
+            <br>Fast Rent</h2>
+            
+            <div class="footer-box">
+                <h3>Locations</h3>
+                <a href="https://www.google.com/maps/dir/Ho/Ho+Technical+University,+Poly+Road,+Ho/@6.6000846,0.4632041,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x102725152a227ba1:0x9da6ad4a4c9a2107!2m2!1d0.4785495!2d6.6101493!1m5!1m1!1s0x102725ba9f8eed05:0xea69d50b3494d4d1!2m2!1d0.4674691!2d6.5901052?authuser=0&entry=ttu">Ho</a>
+                <a href="https://www.google.com/maps/dir/Ho+Technical+University,+Poly+Road,+Ho/Hohoe/@6.8714832,0.1197711,10z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x102725ba9f8eed05:0xea69d50b3494d4d1!2m2!1d0.4674691!2d6.5901052!1m5!1m1!1s0x1027a8ee67aa0e8b:0x8745bc0e9eefd489!2m2!1d0.4738293!2d7.1518505?authuser=0&entry=ttu">Hohoe</a>
+                <a href="https://www.google.com/maps/dir/Ho+Technical+University,+Poly+Road,+Ho/Accra+Mall,+Spintex+Road,+Accra/@6.1125809,-0.5146793,9z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x102725ba9f8eed05:0xea69d50b3494d4d1!2m2!1d0.4674691!2d6.5901052!1m5!1m1!1s0xfdf9b13b0062aad:0x75de9717e31b2442!2m2!1d-0.1733501!2d5.6221003?authuser=0&entry=ttu">Accra</a>
+                
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <a href="#">Call: +233 248 566 921</a>
+                <a href="https://mail.google.com/mail/u/0/#inbox">fastrent1@gmail.com</a>
+                <div class="social">
+                    <a href="https://web.facebook.com/?_rdc=1&_rdr"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://twitter.com/i/flow/login?lang=en"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fonetap%2F%3Fnext%3D%252F%26__coig_login%3D1"><i class='bx bxl-instagram' ></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Copyright -->
+<div class="copyright">
+     <p>&#169; Fast Rent - All Right Reserved</p>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+    
+</body>
+</html>

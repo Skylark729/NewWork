@@ -1,0 +1,164 @@
+<html>
+<head>
+  <style>
+    /* CSS code for styling the page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    
+
+    h1 {
+      text-align: center;
+      color: white;
+      background-color: tomato;
+      padding: 20px;
+    }
+
+    .uploadform {
+      margin: 20px;
+    }
+
+    .uploadform {
+      display: none;
+    }
+
+
+      .uploadform #upload-input {
+      background-color: tomato;
+      width: 200px;
+      margin-left: 25%;
+      color: white;
+      font-weight: 400;
+      border-radius: 10px 0 10px 0 ;
+      outline: none;
+      border: none;
+    }
+
+    
+
+    .uploadform #image-preview {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border: 2px solid #333;
+      border-radius: 15px;
+      margin-left: 50px;
+    }
+
+
+
+    .uploadform {
+      display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  align-items: center;
+  min-height: 50vh;
+  margin-top: 2rem;
+    }
+
+  .uploadform {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  position: absolute;
+  right: 50px;
+  left: 50px;
+  transform: translate(-50% -50%);
+  margin-right: 400px;
+  margin-left: 400px;
+}
+
+.uploadform h2 {
+  font-size: 1.4rem;
+  color: tomato;
+  text-align: center;
+  font-family: monospace;
+}
+
+.uploadform form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.uploadform textarea {
+  padding: 10px;
+}
+
+
+.uploadform form input {
+  border: 1px solid #8a8a8a;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 1rem;
+  background: var(--bg-color);
+}
+.uploadform form .buttom {
+  outline: none;
+  border: none;
+  background: tomato;
+  color: var(--bg-color);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+.uploadform form .buttom:hover {
+  background: bisque;
+}
+
+.uploadform .btn {
+  border-radius: 0;
+  text-align: center;
+
+}
+  </style>
+</head>
+<body>
+  
+  <h1>Upload and Show Image</h1>
+  
+    
+  <div class="uploadform">
+    <form>
+
+
+
+        <h2>House profile</h2>
+
+      
+      
+      <img id="image-preview" src="" alt="No image selected"><br>
+      <input type="file" id="upload-input" accept="image/*" onchange="showImage(event)">
+
+        <input type="text" name="type" placeholder="Apartment Type">
+        <input type="text" name="location" placeholder="Location">
+        <input type="number" name="contact" placeholder="Contact" maxlength="10">
+        <textarea name="message" placeholder="Apartment description"></textarea><br>
+        <input type="number" name="pricetag" placeholder="Price per month">
+        <input type="submit" value="Upload" class="buttom">
+
+    </form>
+  </div>
+
+
+
+  <script>
+    // JS code for showing the uploaded image on the page
+    function showImage(event) {
+      // get the file object from the input element
+      var file = event.target.files[0];
+      // create a URL for the file object
+      var url = URL.createObjectURL(file);
+      // get the image element from the page
+      var image = document.getElementById("image-preview");
+      // set the src attribute of the image element to the URL
+      image.src = url;
+      // set the alt attribute of the image element to the file name
+      image.alt = file.name;
+    }
+  </script>
+</body>
+</html>
